@@ -19,11 +19,72 @@
     />
     <link rel="stylesheet" href="./css/stylesheet.css" />
   </head>
+
   <body>
-    <header></header>
+    <!-- ===== HEADER ====== -->
+    <header>
+      <div class="pre-header-wrapper">
+        <div class="container header-wrapper">
+          <a href="#" class="logo-anchor">Mobileapp</a>
+          <nav>
+            <ul class="header-navigation">
+              <li><a href="" class="logo-link">HOME</a></li>
+              <li><a href="" class="logo-link">FEATURES</a></li>
+              <li><a href="" class="logo-link">TEAM</a></li>
+              <li><a href="" class="logo-link">TESTIMONIALS</a></li>
+              <li><a href="" class="logo-link">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <main>
-      <h1>This is an example project</h1>
+      <!-- ===== HERO====== -->
+      <section class="hero-container">
+        <div class="container hero-wrapper">
+          <h1 class="hero-header">Introducing Mobileapp</h1>
+          <p class="hero-paragraph">Maecenas vitae tellus sapien. Prasent</p>
+          <ul class="hero-ul">
+            <li class="hero-link">
+              <svg class="ul-icon" width="18" height="18">
+                <use href="./images/svg/symbol-defs.svg#icon-ul"></use>
+              </svg>
+              semper scelerisque tristique a enim
+            </li>
+            <li class="hero-link">
+              <svg class="ul-icon" width="18" height="18">
+                <use href="./images/svg/symbol-defs.svg#icon-ul"></use>
+              </svg>
+              Integer ut mattis nulla, eget vehicula eli
+            </li>
+            <li class="hero-link">
+              <svg class="ul-icon" width="18" height="18">
+                <use href="./images/svg/symbol-defs.svg#icon-ul"></use>
+              </svg>
+              Prasent rutrum ac nunc et
+            </li>
+          </ul>
+          <button class="hero-button button" type="button">Download</button>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <picture>
+            <source
+              class="hero-image"
+              srcset="./images/hero/Group 415.webp, ./images/hero/Group 415@2x.webp"
+              media="(min-width:1280px)"
+            />
+            <source />
+            <img
+              src="./images/hero/Group 415.webp"
+              width="895px"
+              height="553px"
+              alt=""
+            />
+          </picture>
+        </div>
+      </section>
     </main>
 
     <footer></footer>

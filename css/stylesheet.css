@@ -1,3 +1,147 @@
 body {
-    
+    font-family: "Inter", sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+margin: 0;
+padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+
+.pre-header-wrapper {
+    background-color: #06071b;
+    width: 100%;
+    padding-top: 26px;  
+}
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 72px;
+    backdrop-filter: blur(35px);
+    background: linear-gradient(99deg, rgba(0, 197, 235, 0.3) 0%, rgba(181, 68, 254, 0.3) 100%);
+}
+
+.header-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.logo-anchor {
+    color: #fff;
+}
+
+.logo-anchor:hover, .logo-anchor:focus {
+    color: #06071b;
+}
+
+.logo-link {
+    color: #fff;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+    color: #06071b;
+}
+
+/* ===== HERO ===== */
+
+.hero-container {
+    background-color: #06071b;
+    color: #fff;
+    padding: 145px 16px 142px 16px;
+ position: relative;
+}
+
+.hero-image-wrapper {
+position: absolute;
+    top: 30px;
+    right: 5px;
+
+}
+
+.hero-image {
+    display: block;
+    width: 895px; 
+}
+
+.hero-header {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.hero-paragraph {
+font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.hero-ul {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.hero-link {
+    position: relative;
+    left: 16px;
+}
+.hero-link:not(:last-child) {
+    padding-bottom: 12px;
+}
+
+.ul-icon {
+    position: absolute;
+left: -20px;
+    fill: #fff;
+}
+
+.hero-button {
+    margin-top: 64px;
+    padding: 11px 60px;
+    border-radius: 5px;
+    min-width: 200px;
+    height: 42px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+}
+
+
