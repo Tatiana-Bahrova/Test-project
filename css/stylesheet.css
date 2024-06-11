@@ -26,12 +26,57 @@ button {
     border: none;
 }
 
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-/* ===== HEADER ===== */
+.service-button {
+    padding: 11px 60px;
+    border-radius: 5px;
+    min-width: 200px;
+    height: 42px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid transparent;
+    background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%) padding-box, linear-gradient(99deg, #00c5eb 0%, #b544fe 100%) border-box;
+    transition: all 300ms ease-in-out;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 712px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+/* ===== HEADER - MOBILE===== */
 
 .pre-header-wrapper {
     background-color: #06071b;
@@ -46,15 +91,10 @@ button {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 16px;
-    padding-right: 16px;
     height: 72px;
     backdrop-filter: blur(35px);
     background: linear-gradient(99deg, rgba(0, 197, 235, 0.3) 0%, rgba(181, 68, 254, 0.3) 100%);
 }
-
 
 .logo-anchor {
     color: #fff;
@@ -63,40 +103,67 @@ button {
 }
 
 .logo-anchor:hover, .logo-anchor:focus {
-    color: #06071b;
+    color: transparent;
+        background-image: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .header-navigation {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    display: none;
 }
 
-.logo-link {
-    padding-top: 28px;
-    padding-bottom: 28px;
-    color: #fff;
-    font-size: 12px;
-    transition: color 1000ms ease-in;
-    background-image: transparent;
+.open-mobile-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+}
+.burger-icon {
+    stroke: #fff;
 }
 
-
-.logo-link:hover,
-.logo-link:focus {
-    color: transparent;
-    background-image: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.use-burger-icon {
+    width: 24px;
+    height: 14px;
 }
 
-/* ===== HERO ===== */
+@media screen and (min-width: 767px) {
+.open-mobile-btn {
+    display: none;
+}
 
-.hero-header {
+.header-navigation {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .logo-link {
+        padding-top: 28px;
+        padding-bottom: 28px;
+        color: #fff;
+        font-size: 12px;
+        transition: color 1000ms ease-in;
+        background-image: transparent;
+    }
+
+
+    .logo-link:hover,
+    .logo-link:focus {
+        color: transparent;
+        background-image: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }  
+}
+/* ===== HERO -MOBILE ===== */
+
+/* .hero-header {
     animation-name: fadeInDown;
     animation-duration: 3s;
     animation-iteration-count: 2;
@@ -112,42 +179,54 @@ button {
             transform: translateY(0);
             opacity: 1;
         }
-    }
-
+    } */
 .hero-container {
     background-color: #06071b;
     color: #fff;
-    padding: 145px 16px 142px 16px;
- position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1000;
 }
 
-.hero-image-wrapper {
-position: absolute;
-    top: 30px;
-    right: 5px;
- 
+.background-image {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-image: url('../images/hero/iPhonelabel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -50% 50%;
+    opacity: 0.5;
+    z-index: -1;
 }
 
-.hero-image {
-    display: block;
-    width: 895px; 
+@media screen and (min-resolution: 192dpi) {
+.background-image {
+background-image: url('../images/hero/iPhonelabel@2x.png')
+}
 }
 
 .hero-header {
     font-weight: 700;
-    font-size: 40px;
-    margin-bottom: 12px;
+    font-size: 24px;
+    margin-bottom: 40px;
 }
 
 .hero-paragraph {
 font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 28px;
+    max-width: 241px;
 }
 
 .hero-ul {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
+    margin-bottom: 40px;
 }
 
 .hero-link {
@@ -155,33 +234,36 @@ font-weight: 700;
     left: 16px;
 }
 .hero-link:not(:last-child) {
-    padding-bottom: 12px;
+    padding-bottom: 16px;
 }
 
 .ul-icon {
     position: absolute;
-left: -20px;
+    left: -20px;
+    top: -2px;
     fill: #fff;
 }
 
-.hero-button {
-    margin-top: 64px;
-    padding: 11px 60px;
-    border-radius: 5px;
-    min-width: 200px;
-    height: 42px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    color: #fff;
-    border: 1px solid transparent;
-    
-    
-    /* border-image-source: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
-    border-image-slice: 1; */
-    background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%) padding-box, linear-gradient(99deg, #00c5eb 0%, #b544fe 100%) border-box;
-    transition: all 300ms ease-in-out;
+.service-button.hero-button {
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
+@media screen and (min-width: 767px) {
+.service-button.hero-button {
+    margin-left: 0;
+    margin-right: 0;
+    }
 
+    .background-image {
+    position: absolute;
+    height: 110%;
+    background-image: url('../images/hero/iPhone-bcg.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top 150px right 32px;
+    opacity: 1;
+    overflow: visible;
+    }
 
+}
