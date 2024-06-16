@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+    <title>MobileAPP</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,32 +25,31 @@
 
   <body>
     <!-- ===== HEADER ====== -->
-    <header>
-      <div class="pre-header-wrapper">
-        <div class="container header-wrapper">
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="header-navigation-wrapper">
           <a href="#" class="logo-anchor">Mobileapp</a>
-          <nav>
-            <ul class="header-navigation">
-              <li><a href="" class="logo-link">HOME</a></li>
-              <li><a href="" class="logo-link">FEATURES</a></li>
-              <li><a href="" class="logo-link">TEAM</a></li>
-              <li><a href="" class="logo-link">TESTIMONIALS</a></li>
-              <li><a href="" class="logo-link">CONTACT</a></li>
-            </ul>
-          </nav>
+          <ul class="header-navigation">
+            <li><a href="" class="logo-link">HOME</a></li>
+            <li><a href="" class="logo-link">FEATURES</a></li>
+            <li><a href="" class="logo-link">TEAM</a></li>
+            <li><a href="" class="logo-link">TESTIMONIALS</a></li>
+            <li><a href="" class="logo-link">CONTACT</a></li>
+          </ul>
           <button class="open-mobile-btn" type="button">
             <svg class="burger-icon" width="24" height="14">
               <use href="./images/svg/icon.svg#icon-Burger"></use>
             </svg>
           </button>
-        </div>
+        </nav>
       </div>
     </header>
 
     <main>
       <!-- ===== HERO====== -->
       <section class="hero-container">
-       <div class="background-image"></div>
+        <div class="container">
+          <div class="background-image"></div>
           <h1 class="hero-header">Introducing Mobileapp</h1>
           <p class="hero-paragraph">Maecenas vitae tellus sapien. Prasent</p>
           <ul class="hero-ul">
@@ -64,7 +63,7 @@
               <svg class="ul-icon" width="18" height="18">
                 <use href="./images/svg/icon.svg#icon-ul"></use>
               </svg>
-              Integer ut mattis nulla, eget vehicula eli
+              Integer ut mattis nulla, eget vehicula elit
             </li>
             <li class="hero-link">
               <svg class="ul-icon" width="18" height="18">
@@ -73,21 +72,73 @@
               Prasent rutrum ac nunc et
             </li>
           </ul>
-          <button class="service-button hero-button" type="button">Download</button>
-        </section>
+          <button class="service-button hero-button" type="button">
+            Download
+          </button>
+        </div>
+      </section>
 
-
-      <section class="key-section">
-        
+      <section class="features">
+        <div class="container features-wrapper">
+          <h2 class="features-header">Key features</h2>
+          <p class="features-paragraph">
+            Nunc vulputate nibh sed congue facilisis. Curabitur posuere
+            scelerisque neque. In sit amet lectus non lacus sollicitudin cursus
+            a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
+          </p>
+          <img
+            class="features-image"
+            src="./images/features/features-mob.png"
+            alt="big-idea"
+          />
+          <ul class="features-ul">
+            <li class="features-list">
+              <h3 class="features-list-header">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+            <li class="features-list">
+              <h3 class="features-list-header">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+            <li class="features-list">
+              <h3 class="features-list-header">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+            <li class="features-list">
+              <h3 class="features-list-header">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+            <li class="features-list">
+              <h3 class="features-list-header">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+            <li class="features-list">
+              <h3 class="features-list-header">Amet varius</h3>
+              <p class="features-list-text">
+                Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
+                Vivamus diam a iaculis malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </footer>
+    <footer></footer>
   </body>
 </html>
